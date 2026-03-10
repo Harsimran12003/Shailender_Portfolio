@@ -34,8 +34,16 @@ export default function Navbar() {
 
           {/* Icons */}
           <div className="flex gap-6 text-[20px] text-[#1b3b5a]">
-            <img src="./linkedin.png" alt="linkedin"  className="cursor-pointer h-[20px] w-[20px]"/>
-            <img src="./mail.png" alt="mail" className="cursor-pointer h-[20px] w-[20px]"/>
+            <img
+              src="./linkedin.png"
+              alt="linkedin"
+              className="cursor-pointer h-[20px] w-[20px]"
+            />
+            <img
+              src="./mail.png"
+              alt="mail"
+              className="cursor-pointer h-[20px] w-[20px]"
+            />
           </div>
         </div>
 
@@ -44,17 +52,27 @@ export default function Navbar() {
 
         {/* Navigation menu */}
         <nav className="flex flex-wrap gap-x-10 gap-y-4 text-[18px] text-[#1b3b5a] font-medium">
-          <a className="hover:underline cursor-pointer">Home</a>
-          <a className="hover:underline cursor-pointer">About</a>
-          <a className="hover:underline cursor-pointer">Experience</a>
-          <a className="hover:underline cursor-pointer">Achievements</a>
-          <a className="hover:underline cursor-pointer">Leadership & Events</a>
-          <a className="hover:underline cursor-pointer">Publications</a>
-          <a className="hover:underline cursor-pointer">Education</a>
+          {[
+            "Home",
+            "About",
+            "Experience",
+            "Achievements",
+            "Leadership & Events",
+            "Publications",
+            "Education",
+            "Volunteering",
+            "Contact",
+          ].map((item, i) => (
+            <a
+              key={i}
+              className="relative cursor-pointer transition-all duration-300 hover:text-[#FF9933] group"
+            >
+              {item}
 
-          {/* second line */}
-          <a className="hover:underline cursor-pointer">Volunteering</a>
-          <a className="hover:underline cursor-pointer">Contact</a>
+              {/* Animated underline */}
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#FF9933] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
         </nav>
       </div>
     </header>
