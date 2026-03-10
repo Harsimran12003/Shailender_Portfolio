@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './index.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/Mainpage";
 
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-900">
-      
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
