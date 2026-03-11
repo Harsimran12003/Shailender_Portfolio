@@ -19,19 +19,17 @@ export default function Navbar() {
   return (
     <>
       {/* HEADER */}
-      <header className="w-full">
-
+      <header className=" w-full">
         {/* Top colored lines */}
-        <div className="w-full">
+        <div className="w-full ">
           <div className="h-[3px] bg-[#f39c12]"></div>
           <div className="h-[3px] bg-white"></div>
           <div className="h-[3px] bg-[#2e7d32]"></div>
         </div>
 
         {/* Logo Section */}
-        <div className="px-4 sm:px-8 lg:px-16 py-6">
+        <div className="fixed top-0 mt-2 md:mt-0 left-0 w-full bg-white z-50 px-4 sm:px-8 lg:px-16 py-4 md:static md:bg-transparent md:py-6">
           <div className="flex justify-between items-center">
-
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-[#1b3b5a] flex items-center justify-center">
                 <img src="./logo.png" alt="logo" />
@@ -59,18 +57,16 @@ export default function Navbar() {
             >
               {open ? <X size={28} /> : <Menu size={28} />}
             </button>
-
           </div>
         </div>
 
         <div className="border-t border-gray-300"></div>
-
       </header>
+      <div className="h-[80px] md:hidden"></div>
 
       {/* STICKY NAVIGATION */}
-      <div className="sticky top-0 z-50 bg-white shadow-md border-b-4 border-[#FF9933]">
+      <div className="hidden md:block sticky top-0 z-50 bg-white shadow-md border-b-4 border-[#FF9933]">
         <nav className="px-4 sm:px-8 lg:px-16 py-4">
-
           {/* Desktop Links */}
           <div className="hidden md:flex flex-wrap gap-x-10 gap-y-4 text-[18px] text-[#1b3b5a] font-medium justify-center">
             {links.map((item, i) => (
@@ -86,22 +82,23 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu */}
-          {open && (
-            <div className="flex flex-col gap-4 md:hidden mt-2 text-[#1b3b5a] font-medium">
-              {links.map((item, i) => (
-                <a
-                  key={i}
-                  className="hover:text-[#FF9933] transition"
-                  onClick={() => setOpen(false)}
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          )}
-
         </nav>
       </div>
+      {/* MOBILE MENU */}
+      {/* MOBILE MENU */}
+{open && (
+  <div className="md:hidden fixed top-[72px] left-0 w-full bg-white shadow-lg border-b border-gray-200 px-6 py-6 flex flex-col gap-5 z-40">
+    {links.map((item, i) => (
+      <a
+        key={i}
+        className="text-[#1b3b5a] font-medium hover:text-[#FF9933] transition text-lg"
+        onClick={() => setOpen(false)}
+      >
+        {item}
+      </a>
+    ))}
+  </div>
+)}
     </>
   );
 }
