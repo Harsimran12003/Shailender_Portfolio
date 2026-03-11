@@ -33,60 +33,58 @@ const highlights = [
 
 export default function CareerHighlights() {
   return (
-    <section className="bg-[#F9FAFB] py-20 px-6">
+    <section className="bg-[#F9FAFB] py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto">
 
         {/* Heading */}
-        <div className="mb-12">
-          <h2 className="text-[38px] font-serif font-bold text-[#0b3557]">
+        <div className="mb-10 sm:mb-12 text-center lg:text-left">
+          <h2 className="text-[28px] sm:text-[32px] lg:text-[38px] font-serif font-bold text-[#0b3557]">
             Career Highlights
           </h2>
-          <div className="w-32 h-[4px] bg-[#FF9933] mt-3"></div>
+
+          <div className="w-24 sm:w-28 lg:w-32 h-[4px] bg-[#FF9933] mt-3 mx-auto lg:mx-0"></div>
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
 
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md overflow-hidden"
+              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
             >
-
-              {/* Image Section */}
+              {/* Image */}
               <div className="relative">
 
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-[290px] object-cover"
+                  className="w-full h-[220px] sm:h-[250px] lg:h-[290px] object-cover"
                 />
 
                 {/* Badge */}
-                <span className="absolute top-3 right-3 bg-[#FF9933] text-white text-md px-3 py-1 rounded-full font-medium">
+                <span className="absolute top-3 right-3 bg-[#FF9933] text-white text-xs sm:text-sm px-3 py-1 rounded-full font-medium">
                   {item.badge}
                 </span>
 
                 {/* Icon */}
-                <div className="absolute bottom-[-18px] left-5 bg-white shadow-md p-3 rounded-lg text-[#0b3557]">
+                <div className="absolute bottom-[-16px] left-5 bg-white shadow-md p-2 sm:p-3 rounded-lg text-[#0b3557]">
                   {item.icon}
                 </div>
-
               </div>
 
               {/* Content */}
-              <div className="p-6 pt-8">
+              <div className="p-5 sm:p-6 pt-7 sm:pt-8">
 
-                <h3 className="text-[22px] font-semibold text-[#0b3557] mb-2">
+                <h3 className="text-[18px] sm:text-[20px] lg:text-[22px] font-semibold text-[#0b3557] mb-2">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-600 leading-6">
+                <p className="text-gray-600 text-[14px] sm:text-[15px] leading-6">
                   {item.desc}
                 </p>
 
               </div>
-
             </div>
           ))}
 

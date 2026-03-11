@@ -32,24 +32,26 @@ export default function LeadershipEvents() {
   ];
 
   return (
-    <section className=" py-20 px-6">
+    <section className="py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto">
+
         {/* Heading */}
-        <div className="mb-12">
-          <h2 className="text-[36px] font-serif font-bold text-[#0b3557]">
+        <div className="mb-10 sm:mb-12 text-center lg:text-left">
+          <h2 className="text-[28px] sm:text-[32px] lg:text-[36px] font-serif font-bold text-[#0b3557]">
             Leadership & Events
           </h2>
-          <div className="w-64 h-[4px] bg-[#FF9933] mt-3"></div>
 
-          <p className="text-gray-600 mt-3 max-w-full">
+          <div className="w-40 sm:w-52 lg:w-64 h-[4px] bg-[#FF9933] mt-3 mx-auto lg:mx-0"></div>
+
+          <p className="text-gray-600 mt-3 max-w-[700px] mx-auto lg:mx-0 text-sm sm:text-base">
             Demonstrated leadership through organizing large-scale events,
             managing teams, and coordinating with government officials and
             stakeholders.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="space-y-10">
+        {/* Event Cards */}
+        <div className="space-y-8 sm:space-y-10">
           {events.map((event, index) => (
             <div
               key={index}
@@ -60,27 +62,30 @@ export default function LeadershipEvents() {
                 <img
                   src={event.img}
                   alt={event.title}
-                  className="w-full h-[320px] object-cover"
+                  className="w-full h-[220px] sm:h-[260px] md:h-[300px] lg:h-[320px] object-cover"
                 />
 
-                {/* Floating icon */}
-                <div className="absolute top-4 left-4 bg-white shadow-md p-3 rounded-full text-[#FF9933]">
+                {/* Floating Icon */}
+                <div className="absolute top-4 left-4 bg-white shadow-md p-2 sm:p-3 rounded-full text-[#FF9933]">
                   {event.icon}
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-5 sm:p-6">
+
                 {/* Role Badge */}
-                <span className="bg-[#FF9933] text-white text-xs px-3 py-1 rounded-full font-medium">
+                <span className="bg-[#FF9933] text-white text-[11px] sm:text-xs px-3 py-1 rounded-full font-medium">
                   {event.role}
                 </span>
 
-                <h3 className="text-[24px] font-semibold text-[#0b3557] mt-3">
+                <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-semibold text-[#0b3557] mt-3">
                   {event.title}
                 </h3>
 
-                <p className="text-gray-600 mt-3 leading-6">{event.desc}</p>
+                <p className="text-gray-600 mt-3 leading-6 text-sm sm:text-base">
+                  {event.desc}
+                </p>
 
                 {/* Stats */}
                 {event.stats && (
@@ -96,15 +101,17 @@ export default function LeadershipEvents() {
                     {event.location}
                   </div>
                 )}
+
               </div>
             </div>
           ))}
         </div>
+
         {/* Additional Leadership Roles */}
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
-          {/* Card 1 */}
-          <div className="bg-[#F9FAFB] border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-[20px] font-semibold text-[#0b3557]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 sm:mt-12">
+
+          <div className="bg-[#F9FAFB] border border-gray-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow-md transition">
+            <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#0b3557]">
               Class Representative – MBA
             </h3>
 
@@ -114,9 +121,8 @@ export default function LeadershipEvents() {
             </p>
           </div>
 
-          {/* Card 2 */}
-          <div className="bg-[#F9FAFB] border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-[20px] font-semibold text-[#0b3557]">
+          <div className="bg-[#F9FAFB] border border-gray-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow-md transition">
+            <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#0b3557]">
               Student Head Organizer – Vyapaar 3.0
             </h3>
 
@@ -126,9 +132,8 @@ export default function LeadershipEvents() {
             </p>
           </div>
 
-          {/* Card 3 */}
-          <div className="bg-[#F9FAFB] border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-[20px] font-semibold text-[#0b3557]">
+          <div className="bg-[#F9FAFB] border border-gray-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow-md transition">
+            <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#0b3557]">
               Sponsorship Head – VIPANAN 2.0
             </h3>
 
@@ -137,7 +142,9 @@ export default function LeadershipEvents() {
               marketing summit
             </p>
           </div>
+
         </div>
+
       </div>
     </section>
   );
