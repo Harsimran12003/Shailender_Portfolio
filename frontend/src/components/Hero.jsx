@@ -53,15 +53,19 @@ export default function Hero() {
             initiatives.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
-            <a href="#experience">
-              <button className="bg-[#FF9933] hover:bg-[#e68310] px-6 py-3 rounded-md font-semibold cursor-pointer">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-5 mt-8 w-full sm:w-auto">
+            <a href="#experience" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-[#FF9933] hover:bg-[#e68310] px-6 py-3 rounded-md font-semibold cursor-pointer">
                 View Experience
               </button>
             </a>
 
-            <a href="/ShailenderTiwariCV.pdf" download>
-              <button className="flex items-center justify-center gap-2 bg-gray-200 text-[#0b3557] px-6 py-3 rounded-md font-semibold hover:bg-gray-300 cursor-pointer">
+            <a
+              href="/ShailenderTiwariCV.pdf"
+              download
+              className="w-full sm:w-auto"
+            >
+              <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-gray-200 text-[#0b3557] px-6 py-3 rounded-md font-semibold hover:bg-gray-300 cursor-pointer">
                 <Download size={18} />
                 Download CV
               </button>
