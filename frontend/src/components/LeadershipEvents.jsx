@@ -12,7 +12,7 @@ export default function LeadershipEvents() {
       icon: <Mic size={18} />,
     },
     {
-      img: "/event2.png",
+      img: "/slider7.jpeg",
       role: "Core Volunteer",
       title: "VBYLD 2026",
       desc: "Coordinated operations at Bharat Mandapam for the Viksit Bharat Young Leaders Dialogue working directly with MYAS officials and IAS trainee officers.",
@@ -21,7 +21,7 @@ export default function LeadershipEvents() {
       icon: <Users size={18} />,
     },
     {
-      img: "/event3.jpg",
+      img: "/slider4.jpeg",
       role: "Organizing Team Member",
       title: "Yuva Connect 2025",
       desc: "Part of organizing committee for major youth engagement event facilitating networking and knowledge-sharing among students and professionals.",
@@ -62,7 +62,7 @@ export default function LeadershipEvents() {
                 <img
                   src={event.img}
                   alt={event.title}
-                  className="w-full h-[220px] sm:h-[260px] md:h-[300px] lg:h-[320px] object-cover"
+                  className="w-full h-[220px] sm:h-[260px] md:h-[390px] lg:h-[390px] object-cover"
                 />
 
                 {/* Floating Icon */}

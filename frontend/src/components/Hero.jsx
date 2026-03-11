@@ -60,10 +60,12 @@ export default function Hero() {
               </button>
             </a>
 
-            <button className="flex items-center justify-center gap-2 bg-gray-200 text-[#0b3557] px-6 py-3 rounded-md font-semibold hover:bg-gray-300">
-              <Download size={18} />
-              Download CV
-            </button>
+            <a href="/ShailenderTiwariCV.pdf" download>
+              <button className="flex items-center justify-center gap-2 bg-gray-200 text-[#0b3557] px-6 py-3 rounded-md font-semibold hover:bg-gray-300 cursor-pointer">
+                <Download size={18} />
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
       </div>

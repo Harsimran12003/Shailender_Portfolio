@@ -16,16 +16,7 @@ export default function Education() {
       year: "2021-2024",
       icon: <GraduationCap size={20} />,
     },
-    {
-      title: "Class 12",
-      school: "Tagore Public School (CBSE)",
-      icon: <Award size={20} />,
-    },
-    {
-      title: "Class 10",
-      school: "Tagore Public School (CBSE)",
-      icon: <Award size={20} />,
-    },
+    
   ];
 
   return (
