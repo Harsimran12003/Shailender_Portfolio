@@ -2,7 +2,7 @@ import { FileText, Award } from "lucide-react";
 
 export default function Publications() {
   return (
-    <section className="py-10 sm:py-10 lg:py-10 px-4 sm:px-6 lg:px-8">
+    <section id="publications" className="py-10 sm:py-10 lg:py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto">
 
         {/* Heading */}

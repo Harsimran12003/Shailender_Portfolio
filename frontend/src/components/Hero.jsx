@@ -2,7 +2,7 @@ import { MapPin, Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-b from-[#001F3F] to-[#003366] text-white overflow-hidden">
+    <section id="home" className="relative bg-gradient-to-b from-[#001F3F] to-[#003366] text-white overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-10 py-14 sm:py-16 lg:py-20">
 
         {/* TOP ROW */}

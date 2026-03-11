@@ -5,15 +5,15 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    "Home",
-    "About",
-    "Experience",
-    "Achievements",
-    "Leadership & Events",
-    "Publications",
-    "Education",
-    "Volunteering",
-    "Contact",
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Experience", id: "experience" },
+    { name: "Achievements", id: "achievements" },
+    { name: "Leadership & Events", id: "leadership" },
+    { name: "Publications", id: "publications" },
+    { name: "Education", id: "education" },
+    { name: "Volunteering", id: "volunteering" },
+    { name: "Contact", id: "contact" },
   ];
 
   return (
@@ -72,9 +72,10 @@ export default function Navbar() {
             {links.map((item, i) => (
               <a
                 key={i}
+                href={`#${item.id}`}
                 className="relative cursor-pointer transition-all duration-300 hover:text-[#FF9933] group"
               >
-                {item}
+                {item.name}
 
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#FF9933] transition-all duration-300 group-hover:w-full"></span>
               </a>
@@ -86,19 +87,20 @@ export default function Navbar() {
       </div>
       {/* MOBILE MENU */}
       {/* MOBILE MENU */}
-{open && (
-  <div className="md:hidden fixed top-[72px] left-0 w-full bg-white shadow-lg border-b border-gray-200 px-6 py-6 flex flex-col gap-5 z-40">
-    {links.map((item, i) => (
-      <a
-        key={i}
-        className="text-[#1b3b5a] font-medium hover:text-[#FF9933] transition text-lg"
-        onClick={() => setOpen(false)}
-      >
-        {item}
-      </a>
-    ))}
-  </div>
-)}
+      {open && (
+        <div className="md:hidden fixed top-[72px] left-0 w-full bg-white shadow-lg border-b border-gray-200 px-6 py-6 flex flex-col gap-5 z-40">
+          {links.map((item, i) => (
+            <a
+              key={i}
+              href={`#${item.id}`}
+              className="text-[#1b3b5a] font-medium hover:text-[#FF9933] transition text-lg"
+              onClick={() => setOpen(false)}
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      )}
     </>
   );
 }

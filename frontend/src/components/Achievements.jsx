@@ -19,7 +19,7 @@ export default function Achievements() {
   ];
 
   return (
-    <section className="bg-[#F9FAFB] py-10 sm:py-10 lg:py-10 px-4 sm:px-6 lg:px-8">
+    <section id="achievements" className="bg-[#F9FAFB] py-10 sm:py-10 lg:py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto">
 
         {/* Heading */}

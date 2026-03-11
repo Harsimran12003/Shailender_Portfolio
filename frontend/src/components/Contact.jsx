@@ -25,7 +25,7 @@ export default function Contact() {
   ];
 
   return (
-    <section className="bg-[#F9FAFB]  px-4 sm:px-6">
+    <section id="contact" className="bg-[#F9FAFB]  px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Heading */}

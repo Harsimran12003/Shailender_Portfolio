@@ -32,7 +32,7 @@ export default function LeadershipEvents() {
   ];
 
   return (
-    <section className="py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="leadership" className="py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto">
 
         {/* Heading */}
