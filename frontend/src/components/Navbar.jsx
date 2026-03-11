@@ -47,8 +47,16 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:flex gap-6">
-              <img src="./linkedin.png" className="h-[20px]" />
-              <img src="./mail.png" className="h-[20px]" />
+              <a
+                href="https://www.linkedin.com/in/shailendertiwar1211"
+                target="_blank"
+              >
+                <img src="./linkedin.png" className="h-[20px]" />
+              </a>
+
+              <a href="mailto:shailendertiwari1211@gmail.com">
+                <img src="./mail.png" className="h-[20px]" />
+              </a>
             </div>
 
             <button
@@ -86,7 +94,6 @@ export default function Navbar() {
         </nav>
       </div>
       {/* MOBILE MENU */}
-      {/* MOBILE MENU */}
       {open && (
         <div className="md:hidden fixed top-[72px] left-0 w-full bg-white shadow-lg border-b border-gray-200 px-6 py-6 flex flex-col gap-5 z-40">
           {links.map((item, i) => (
@@ -99,6 +106,17 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
+
+          {/* Social Icons */}
+          <div className="flex gap-6 pt-4 border-t border-gray-200">
+            <a href="https://www.linkedin.com/in/shailendertiwar1211" target="_blank">
+              <img src="./linkedin.png" className="h-[22px]" />
+            </a>
+
+            <a href="mailto:shailendertiwari1211@gmail.com">
+              <img src="./mail.png" className="h-[22px]" />
+            </a>
+          </div>
         </div>
       )}
     </>

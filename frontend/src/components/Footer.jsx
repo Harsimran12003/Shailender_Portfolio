@@ -3,7 +3,6 @@ import { Mail, Phone, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[#001F3F] text-white">
-
       {/* Top Accent Lines */}
       <div className="w-full pt-8">
         <div className="h-[3px] bg-[#FF9933]"></div>
@@ -12,10 +11,8 @@ export default function Footer() {
       </div>
 
       <div className="max-w-[1200px] mx-auto px-6 py-12">
-
         {/* Top Grid */}
         <div className="grid md:grid-cols-3 gap-10">
-
           {/* Left */}
           <div>
             <h3 className="text-[22px] font-serif font-semibold">
@@ -38,32 +35,32 @@ export default function Footer() {
             </h3>
 
             <div className="space-y-3 text-sm text-gray-300">
-
               <div className="flex items-center gap-3">
-                <Mail size={18}/>
+                <Mail size={18} />
                 shailendertiwari1211@gmail.com
               </div>
 
               <div className="flex items-center gap-3">
-                <Phone size={18}/>
+                <Phone size={18} />
                 +91 95926 50601
               </div>
-
             </div>
           </div>
 
           {/* Connect */}
           <div>
-            <h3 className="text-[20px] font-semibold mb-4">
-              Connect
-            </h3>
+            <h3 className="text-[20px] font-semibold mb-4">Connect</h3>
 
-            <button className="flex items-center gap-2 bg-white text-[#002B4F] px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition">
-              <Linkedin size={18}/>
+            <a
+              href="https://www.linkedin.com/in/shailendertiwar1211"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-[#002B4F] px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition"
+            >
+              <Linkedin size={18} />
               LinkedIn Profile
-            </button>
+            </a>
           </div>
-
         </div>
 
         {/* Divider */}
@@ -71,7 +68,6 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center">
-
           <p className="text-sm text-gray-300">
             © 2026 Shailender Tiwari – Professional Portfolio
           </p>
@@ -80,7 +76,6 @@ export default function Footer() {
             Committed to excellence in public service, human resource
             leadership, and policy development.
           </p>
-
         </div>
 
         {/* Divider */}
@@ -88,11 +83,26 @@ export default function Footer() {
 
         {/* Credits */}
         <div className="text-center text-sm text-gray-400 space-y-1">
-          <p>Website Designed by Prerna Sablok | Developed by Harsimranjit Kaur</p>
+          <p>
+            Website Designed by{" "}
+            <a
+              href="https://www.linkedin.com/in/prerna-sablok30/"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              Prerna Sablok
+            </a>{" "}
+            | Developed by{" "}
+            <a
+              href="https://www.linkedin.com/in/harsimranjitk12/"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              Harsimranjit Kaur
+            </a>
+          </p>
         </div>
-
       </div>
-
     </footer>
   );
 }

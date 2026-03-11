@@ -2,12 +2,13 @@ import { MapPin, Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative bg-gradient-to-b from-[#001F3F] to-[#003366] text-white overflow-hidden">
+    <section
+      id="home"
+      className="relative bg-gradient-to-b from-[#001F3F] to-[#003366] text-white overflow-hidden"
+    >
       <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-10 py-14 sm:py-16 lg:py-20">
-
         {/* TOP ROW */}
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-10 lg:gap-12">
-
           {/* LEFT CONTENT */}
           <div className="max-w-[650px] text-center lg:text-left">
             <span className="bg-[#FF9933] text-white px-4 py-2 rounded-md text-sm sm:text-md font-bold">
@@ -53,9 +54,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-5 mt-8">
-            <button className="bg-[#FF9933] hover:bg-[#e68310] px-6 py-3 rounded-md font-semibold">
-              View Experience
-            </button>
+            <a href="#experience">
+              <button className="bg-[#FF9933] hover:bg-[#e68310] px-6 py-3 rounded-md font-semibold cursor-pointer">
+                View Experience
+              </button>
+            </a>
 
             <button className="flex items-center justify-center gap-2 bg-gray-200 text-[#0b3557] px-6 py-3 rounded-md font-semibold hover:bg-gray-300">
               <Download size={18} />

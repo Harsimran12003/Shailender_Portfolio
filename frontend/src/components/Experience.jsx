@@ -69,7 +69,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="bg-[#F9FAFB] py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="bg-[#F9FAFB] py-10 sm:py-10 lg:py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Heading */}

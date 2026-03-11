@@ -5,6 +5,7 @@ export default function Contact() {
     {
       title: "Email",
       value: "shailendertiwari1211@gmail.com",
+      link: "mailto:shailendertiwari1211@gmail.com",
       icon: <Mail size={20} />,
     },
     {
@@ -19,15 +20,15 @@ export default function Contact() {
     },
     {
       title: "LinkedIn",
-      value: "Connect on LinkedIn",
+      value: "linkedin.com/in/shailendertiwar1211",
       icon: <Linkedin size={20} />,
+      link: "https://linkedin.com/in/shailendertiwar1211",
     },
   ];
 
   return (
     <section id="contact" className="bg-[#F9FAFB]  px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto">
-
         {/* Heading */}
         <div className="mb-10">
           <h2 className="text-[32px] sm:text-[36px] font-serif font-bold text-[#0b3557]">
@@ -49,13 +50,11 @@ export default function Contact() {
 
         {/* Contact Cards */}
         <div className="space-y-4">
-
           {contacts.map((item, index) => (
             <div
               key={index}
               className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-4 hover:shadow-md transition"
             >
-
               {/* Icon */}
               <div className="w-10 h-10 flex items-center justify-center bg-[#0b3557] text-white rounded-full">
                 {item.icon}
@@ -64,30 +63,36 @@ export default function Contact() {
               {/* Text */}
               <div>
                 <p className="text-gray-500 text-sm">{item.title}</p>
-                <p className="text-[#0b3557] font-medium text-sm sm:text-base">
-                  {item.value}
-                </p>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#0b3557] font-medium text-sm sm:text-base hover:text-[#FF9933] transition"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <p className="text-[#0b3557] font-medium text-sm sm:text-base">
+                    {item.value}
+                  </p>
+                )}
               </div>
-
             </div>
           ))}
-
         </div>
 
         {/* Opportunity Banner */}
         <div className="mt-12 bg-gradient-to-r from-[#001F3F] to-[#003366] text-white rounded-xl p-8 ">
-
           <h3 className="text-[20px] sm:text-[22px] font-semibold mb-3">
             Open to Opportunities
           </h3>
 
           <p className="text-gray-200 text-sm sm:text-base max-w-full mx-auto">
-            Available for HR consultations, policy research collaborations,
-            and youth leadership initiatives.
+            Available for HR consultations, policy research collaborations, and
+            youth leadership initiatives.
           </p>
-
         </div>
-
       </div>
     </section>
   );
