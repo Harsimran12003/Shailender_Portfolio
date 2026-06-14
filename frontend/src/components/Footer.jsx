@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
 
             <p className="text-gray-300 text-sm">
-              MBA (HR) Candidate | Public Policy Professional
+              HR Candidate | Public Policy Professional
             </p>
           </div>
 

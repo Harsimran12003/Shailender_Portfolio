@@ -1,6 +1,18 @@
 export default function Experience() {
   const experiences = [
     {
+      icon: "ITeC",
+      role: "Resource Person - ITEC Programme",
+      org: "HSMI, HUDCO Ltd. & Ministry of External Affairs, India",
+      date: "May 2026",
+      points: [
+        `Served as a guest Resource Person to deliver a specialized training session on "National Schemes and Initiatives for Women Empowerment" for international delegates across 14 nations.",
+        "Oversee governance and administrative compliance across organizational operations`,
+        "Facilitated cross-border strategic policy dialogues, focusing on translating state-led women's empowerment frameworks into grassroots socio-economic impact.",
+        "Coordinated with ministry officials and a cross-functional research team to architecture comprehensive presentation assets for global administrative leaders.",
+      ],
+    },
+    {
       icon: "VRF",
       role: "Secretary",
       org: "Vajpayee Research Foundation",

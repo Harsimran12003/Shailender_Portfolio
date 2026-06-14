@@ -16,6 +16,8 @@ export default function Achievements() {
     "/slider7.jpeg",
     "/slider8.jpeg",
     "/slider9.jpeg",
+    "/slider10.jpeg",
+    "/slider11.jpeg"
   ];
 
   return (

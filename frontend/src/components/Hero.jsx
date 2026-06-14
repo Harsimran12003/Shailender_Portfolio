@@ -24,7 +24,7 @@ export default function Hero() {
             </h3>
 
             <p className="mt-2 text-gray-300 text-[15px] sm:text-[17px] lg:text-[18px]">
-              MBA (HR) Candidate | Public Policy | Human Resource Leadership
+              HR Candidate | Public Policy | Human Resource Leadership
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-2 mt-3 text-gray-300">
