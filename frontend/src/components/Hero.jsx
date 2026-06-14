@@ -24,7 +24,7 @@ export default function Hero() {
             </h3>
 
             <p className="mt-2 text-gray-300 text-[15px] sm:text-[17px] lg:text-[18px]">
-              HR Candidate | Public Policy | Human Resource Leadership
+              HR Professional | Public Policy | Human Resource Leadership
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-2 mt-3 text-gray-300">
@@ -46,7 +46,7 @@ export default function Hero() {
         {/* SECOND ROW */}
         <div className="mt-8 text-center lg:text-left">
           <p className="text-gray-300 leading-7 text-[15px] sm:text-[16px] lg:text-[17px] max-w-[900px] mx-auto lg:mx-0">
-            Results-driven MBA (HR) student with experience in human resource
+            Results-driven HR professional with experience in human resource
             operations, public policy research, youth leadership initiatives,
             and organizational governance. Experienced in managing large teams,
             coordinating national programs, and contributing to public policy
